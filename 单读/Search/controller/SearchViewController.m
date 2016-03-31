@@ -165,6 +165,11 @@
     }
 }
 
+//添加输入键盘时点击“搜索”时退出键盘操作
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [searchBar endEditing:YES];
+}
 #pragma mark - tableView delegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
